@@ -37,3 +37,6 @@
 [submodule "bundle/delimate"]
 	path = bundle/delimate
 	url = https://github.com/Raimondi/delimitMate
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate
