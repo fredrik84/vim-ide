@@ -12,6 +12,9 @@ git submodule add -f https://github.com/godlygeek/tabular tabular
 git submodule add -f https://github.com/ap/vim-buftabline vim-buftabline
 git submodule add -f https://github.com/itchyny/vim-gitbranch vim-gitbranch
 git submodule add -f https://github.com/Valloric/YouCompleteMe youcompleteme
-for i in *; do
+(cd youcompleteme; ./install.py)
+git submodule add -f https://github.com/Raimondi/delimitMate delimitMate
+
+for i in $(ls -d */); do
   (cd $i; git submodule update --init --recursive)
 done
