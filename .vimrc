@@ -37,7 +37,7 @@ map <F4> :NR<CR>
 map <F5> :ALEToggle<CR>
 filetype plugin on
 
-so ~/.vim/delimitMate/test/_setup.vim
+so ~/.vim/bundle/delimitMate/test/_setup.vim
 let delimitMate_expand_cr = 1
 filetype indent plugin on
 
