@@ -40,3 +40,15 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate
+[submodule "bundle/puppet-syntax-vim"]
+	path = bundle/puppet-syntax-vim
+	url = https://github.com/puppetlabs/puppet-syntax-vim
+[submodule "bundle/vim-autoswap"]
+	path = bundle/vim-autoswap
+	url = https://github.com/gioele/vim-autoswap.git
+[submodule "bundle/vim-vmath"]
+	path = bundle/vim-vmath
+	url = git://github.com/nixon/vim-vmath.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree

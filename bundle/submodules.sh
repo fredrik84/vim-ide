@@ -14,6 +14,7 @@ git submodule add -f https://github.com/itchyny/vim-gitbranch vim-gitbranch
 git submodule add -f https://github.com/Valloric/YouCompleteMe youcompleteme
 (cd youcompleteme; ./install.py)
 git submodule add -f https://github.com/Raimondi/delimitMate delimitMate
+git submodule add -f https://github.com/gioele/vim-autoswap.git
 
 for i in $(ls -d */); do
   (cd $i; git submodule update --init --recursive)

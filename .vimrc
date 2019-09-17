@@ -85,9 +85,15 @@ let g:ale_set_highlights = 0
 set hidden
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
-let g:ale_python_flake8_args="--ignore=E111,E302,E305,E501"
+let g:ale_python_flake8_options="--ignore=E111,E302,E305,E501,E114"
+let g:ale_puppet_puppetlint_options="--no-140chars-check --no-autoloader_layout-check"
 au BufRead,BufNewFile */playbooks/*.yml set filetype=yaml.ansible
 au BufRead,BufNewFile */ansible/*.yaml set filetype=yaml.ansible
 xnoremap <F6> :NR<CR>
 xnoremap <Tab> >gv
 xnoremap <S-Tab> <gv
+vmap <expr>  ++  VMATH_YankAndAnalyse()
+nmap         ++  vip++
+
+set title titlestring=
+ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
